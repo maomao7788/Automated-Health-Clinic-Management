@@ -35,18 +35,20 @@ The goal of this project is to provide a lightweight HTTP-based clinic managemen
 - No external database; data lives in JSON files under the application folder  
 - All HTTP endpoints use GET for simplicity (no REST verbs beyond GET)  
 - Business hours limited to 09:00–17:00 in 10-minute increments  
-
+All routes, data models, JSON I/O
 ## Repository Structure
-
+.
 ├── CMakeLists.txt
-├── src/
-│ └── AHCM.cpp # All routes, data models, JSON I/O
-├── include/
-│ └── nlohmann/ # JSON for Modern C++
-│ └── AHCM.h # 
-├── third_party/
-│ ├── crow/ # Crow framework headers
-│ └── asio/ # Asio headers
+├── src
+│   └── AHCM.cpp         # All routes, data models, JSON I/O
+├── include
+│   ├── AHCM.h           # Header definitions
+│   └── nlohmann
+│       └── json.hpp     # JSON for Modern C++
+└── third_party
+    ├── crow            # Crow framework headers
+    └── asio            # Asio headers
+
 
 ## Technology & Architecture
 
