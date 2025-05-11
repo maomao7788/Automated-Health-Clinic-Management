@@ -37,18 +37,15 @@ The goal of this project is to provide a lightweight HTTP-based clinic managemen
 - Business hours limited to 09:00–17:00 in 10-minute increments  
 All routes, data models, JSON I/O
 ## Repository Structure
-.
-├── CMakeLists.txt
-├── src
-│   └── AHCM.cpp         # All routes, data models, JSON I/O
-├── include
-│   ├── AHCM.h           # Header definitions
-│   └── nlohmann
-│       └── json.hpp     # JSON for Modern C++
-└── third_party
-    ├── crow            # Crow framework headers
-    └── asio            # Asio headers
-
+- CMakeLists.txt
+- src/
+    - AHCM.cpp        # All routes, data models, JSON I/O
+- include/
+    - AHCM.h          # Header definitions
+    - nlohmann/json.hpp
+- third_party/
+    - crow/           # Crow framework headers
+    - asio/           # Asio headers
 
 ## Technology & Architecture
 
