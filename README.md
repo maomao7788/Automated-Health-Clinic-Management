@@ -86,19 +86,19 @@ The server starts on port `8080` and exposes only GET routes for simplicity. Eac
 ## User Guide
 
 - All endpoints use HTTP GET and return JSON.
+- command example:
 - Home: http://localhost:8080/
-- Register Patient: /register?name=John&address=NY&medicalHistory=None&insuranceCompany=ABC
-- Register Doctor: /register_doctor?name=Dr.Smith&specialty=Cardiology&contactInfo=1234
-- Book Appointment: /book_appointment?patientId=1&doctorId=1&date=2025-06-01&time=10:00
-- Add Medical Record: /add_medical_record?patientId=1&doctorId=1&diagnosis=Flu&notes=Treated
-- Add Prescription: /add_prescription?patientId=1&doctorId=1&datePrescribed=2025-06-01&instructions=AfterMeal&itemsUsed=Bandage,2;Syringe,1
+- Register Patient: http://localhost:8080//register?name=John&address=NY&medicalHistory=None&insuranceCompany=ABC
+- Register Doctor: http://localhost:8080//register_doctor?name=Dr.Smith&specialty=Cardiology&contactInfo=1234
+- Book Appointment: http://localhost:8080//book_appointment?patientId=1&doctorId=1&date=2025-06-01&time=10:00
+- Add Medical Record: http://localhost:8080//add_medical_record?patientId=1&doctorId=1&diagnosis=Flu&notes=Treated
+- Add Prescription: http://localhost:8080//add_prescription?patientId=1&doctorId=1&datePrescribed=2025-06-01&instructions=AfterMeal&itemsUsed=Bandage,2;Syringe,1
 - View Entities
-- atients: /patients or /patients/1
-- Doctors: /doctors
-- Appointments: /appointments[?patientId=1]
-- Medical Records: /medical_record/1
-- Bills: /bills
-Inventory: /inventory
-
-Update Inventory
-GET /update_inventory_item?itemName=Bandage&quantity=500
+- patients: http://localhost:8080//patients or /patients/1
+- Doctors: http://localhost:8080//doctors
+- view appointment: http://localhost:8080/appointments
+- View appointments by patient id: http://localhost:8080/appointments?patientId=1
+- Medical Records: http://localhost:8080//medical_record/1
+- Bills: http://localhost:8080//bills
+- Inventory: http://localhost:8080//inventory
+- Update Inventory: http://localhost:8080//update_inventory_item?itemName=Bandage&quantity=500
